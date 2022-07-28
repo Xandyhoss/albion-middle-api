@@ -100,9 +100,11 @@ app.get("/event/:event", async function (req, res) {
     const response = await axios.get(`events/${req.params.event}/`);
     res.send({
       killerName: response.data.Killer.Name,
+      killerId: response.data.Killer.Id,
       killerEquipment: response.data.Killer.Equipment,
       killerIp: response.data.Killer.AverageItemPower,
       victimName: response.data.Victim.Name,
+      victimId: response.data.Victmin.Id,
       victimEquipment: response.data.Victim.Equipment,
       victimIp: response.data.Victim.AverageItemPower,
       killFame: response.data.TotalVictimKillFame,
