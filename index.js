@@ -104,7 +104,7 @@ app.get("/event/:event", async function (req, res) {
       killerEquipment: response.data.Killer.Equipment,
       killerIp: response.data.Killer.AverageItemPower,
       victimName: response.data.Victim.Name,
-      victimId: response.data.Victmin.Id,
+      victimId: response.data.Victim.Id,
       victimEquipment: response.data.Victim.Equipment,
       victimIp: response.data.Victim.AverageItemPower,
       killFame: response.data.TotalVictimKillFame,
