@@ -107,6 +107,7 @@ app.get("/event/:event", async function (req, res) {
       victimId: response.data.Victim.Id,
       victimEquipment: response.data.Victim.Equipment,
       victimIp: response.data.Victim.AverageItemPower,
+      victimInventory: response.data.Victim.Inventory,
       killFame: response.data.TotalVictimKillFame,
       timestamp: fns.format(
         fns.parseISO(response.data.TimeStamp),
